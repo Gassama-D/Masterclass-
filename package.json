@@ -1,0 +1,32 @@
+{
+  "name": "masterclass-5-erreurs",
+  "version": "1.0.0",
+  "description": "Site d'inscription — Masterclass « Les 5 erreurs qui font dévier ton avenir » (DIABY Salim)",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "migrate": "node scripts/migrate.js",
+    "export": "node scripts/export-csv.js",
+    "test": "node --test test/api.test.js test/netlify.test.js",
+    "build:static": "node scripts/build-static.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "libphonenumber-js": "^1.12.6",
+    "nodemailer": "^6.9.16",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@fontsource-variable/fraunces": "^5.1.0",
+    "@fontsource-variable/instrument-sans": "^5.1.0",
+    "smtp-server": "^3.13.6"
+  }
+}
